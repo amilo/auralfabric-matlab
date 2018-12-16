@@ -1,0 +1,14 @@
+SUF='110';
+run(['sensorLog18Revbb_' SUF '.m'])
+%%
+group1 = [103,104,105];
+%%
+for SUF = group1
+    SUF = num2str(SUF);
+    conversion_align_newset(SUF);
+end
+%%
+gr = [103,104,105]
+for a = b
+   disp(a)
+end

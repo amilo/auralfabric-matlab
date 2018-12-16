@@ -1,6 +1,8 @@
 % this will create a variable called "sensor"
 % clf
-
+% this code need to run in a for loop taking the numbers of the suffix
+% for a single file conversion_align_newset(103)
+% group1 = [103,104,105];
 
 function conversion_align_newset(SUF)
 % ='x';
@@ -78,7 +80,7 @@ newlength
 end
         
 columns = columns.';
-fileID = fopen(['sensorLog18Rev_' SUF '.m'],'w');
+fileID = fopen(['auralfabric-matlab/sensorLog18Rev_' SUF '.m'],'w');
 
 fprintf(fileID,'sensor = [\n');
 fprintf(fileID,'%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d\n',columns);
